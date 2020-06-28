@@ -1,0 +1,93 @@
+URxvt.internalBorder:  10
+
+URxvt.font:         xft:FiraMono Nerd Font Mono:size=10
+URxvt.boldFont:     xft:FiraMono Nerd Font Mono:size=10
+#urxvt256c-ml*font: xft:Iosevka Nerd Font:pixelsize=11
+#URxvt.font:         xft:Iosevka Nerd Font:pixelsize=11
+#URxvt.boldFont:     xft:Iosevka Nerd Font:pixelsize=11
+URxvt*intensityStyles: true
+
+URxvt*linespace: 0
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.perl-ext-common: default,clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.copyCommand:  xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.S-C-C: perl:clipboard:copy
+URxvt.keysym.S-C-V: perl:clipboard:paste
+URxvt.keysym.M-v: perl:clipboard:paste_escaped
+
+URxvt*geometry: 100x30
+URxvt*borderLess: false
+URxvt*externalBorder: 0
+URxvt*internalBorder: 0
+
+URxvt*scrollBar: false
+
+URxvt*cursorColor: #ffffff
+URxvt*cursorColor2: #000000
+URxvt*cursorBlink: false
+URxvt*reverseVideo: false
+
+URxvt*depth: 32
+
+URxvt.background: [90]#CCCCCC
+
+URxvt*pointerBlank: false
+URxvt*inheritPixmap: false
+
+URxvt*insecure: false
+URxvt*termName: rxvt-unicode
+URxvt*loginShell: true
+URxvt*hold: false
+URxvt*saveLines: 5000
+URxvt*jumpScroll: true
+URxvt*skipScroll: true
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: false
+URxvt*scrollTtyKeypress: true
+URxvt*mouseWheelScrollPage: false
+
+URxvt*tripleclickwords: true
+URxvt*pastableTabs: false
+URxvt*mapAlert: false
+
+URxvt*urgentOnBell: false
+URxvt*visualBell: false
+URxvt*utmpInhibit: false
+! ------------------------------------------------------------------------------
+! Rofi configs
+! ------------------------------------------------------------------------------
+
+rofi.color-enabled: true
+rofi.color-window: #2e3440, #2e3440, #2e3440
+rofi.color-normal: #2e3440, #d8dee9, #2e3440, #2e3440, #bf616a
+rofi.color-active: #2e3440, #b48ead, #2e3440, #2e3440, #93e5cc
+rofi.color-urgent: #2e3440, #ebcb8b, #2e3440, #2e3440, #ebcb8b
+rofi.modi: run,drun,window
+
+URxvt.keysym.Control-Up:     \033[1;5A
+URxvt.keysym.Control-Down:   \033[1;5B
+URxvt.keysym.Control-Left:   \033[1;5D
+URxvt.keysym.Control-Right:  \033[1;5C
+
+! ------------------------------------------------------------------------------
+! Dmenu configs
+! ------------------------------------------------------------------------------
+
+dmenu.selforeground:	    #d8dee9
+dmenu.background:	        #2e3440
+dmenu.selbackground:	    #bf616a
+dmenu.foreground:	        #d8dee9
+
+
+URxvt.depth:                      32
+URxvt.background:                 [90]#222D31
+URxvt*scrollBar:                  false
+URxvt*mouseWheelScrollPage:       false
+URxvt*cursorBlink:                true
+URxvt*background:                 black
+URxvt*foreground:                 grey
+URxvt*saveLines:                  5000

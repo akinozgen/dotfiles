@@ -1,0 +1,17 @@
+#!/bin/bash
+
+directory="$(find -L ~ -type d -not -path '*/\.*' -not -path '*/Android/*' -maxdepth 5 | dmenu -i -l 10 -p 'Where do you want to save the file? Only absolute path...')"
+query="$(echo '' | dmenu -i -p 'Search for Artist - Song name format')"
+provider="$(echo -e 'Youtube\nSpotify' | dmenu -i -l 2 -p 'Select provider')"
+
+cd $directory
+
+if [ "$provider" = "Spotify" ]
+then
+	spotdl --song "$query" -f "$directory/{artist} - {track-name}.{output-ext}"
+elif [ "$provider" = "Youtube" ]
+then
+	youtube-dl "ytsearch1:$query" -x --audio-format mp3 -o "$directory/%(title)s.%(ext)s"
+fi
+exit
+clear

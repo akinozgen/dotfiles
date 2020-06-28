@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup find $1 | sort -R | mpv --image-display-duration=20 --playlist=- > /dev/null 2>&1&

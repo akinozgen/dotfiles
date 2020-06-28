@@ -1,0 +1,4 @@
+#!/bin/bash
+
+vim "$(find ~/.* | dmenu -i -l 15)"
+clear
