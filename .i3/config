@@ -233,13 +233,14 @@ bindsym $mod+XF86AudioPause exec ~/.local/bin/playit
 focus_follows_mouse no
 # new_window 1pixel
 for_window [class="^Firefox"] border pixel 1
-gaps inner 0
+gaps inner 25
 bindsym $mod+Tab focus right
 bindsym $mod+Shift+Tab focus left
 bindsym $mod+Shift+P  gaps inner all plus 5
 bindsym $mod+Control+P  gaps inner all minus 5
 bindsym $mod+Control+L exec "sh ~/.i3/lock.sh"
 bindsym $mod+b exec --no-startup-id rofi-bluetooth
+bindsym $mod+Shift+V exec vpnupdown
 
 # DEFAULT BORDER
 for_window [class="^.*"] border pixel 0
@@ -266,5 +267,6 @@ exec_always dunst &
 ###########################################################
 exec --no-startup-id xsettingsd &
 exec_always wal-tile
-exec compton --config /compton.conf
+exec_always --no-startup-id picom
+exec_always megasync
 

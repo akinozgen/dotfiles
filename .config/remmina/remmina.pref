@@ -11,7 +11,7 @@ unlock_password=
 floating_toolbar_placement=0
 toolbar_placement=3
 prevent_snap_welcome_message=false
-last_quickconnect_protocol=
+last_quickconnect_protocol=RDP
 fullscreen_on_auto=true
 always_show_tab=true
 hide_connection_toolbar=false
@@ -25,8 +25,8 @@ small_toolbutton=false
 view_file_mode=0
 resolutions=640x480,800x600,1024x768,1152x864,1280x960,1400x1050
 keystrokes=Send hello world§hello world\\n
-main_width=954
-main_height=990
+main_width=952
+main_height=980
 main_maximize=false
 main_sort_column_id=1
 main_sort_order=0
@@ -62,6 +62,7 @@ shortcutkey_toolbar=116
 vte_font=
 vte_allow_bold_text=true
 vte_lines=512
+recent_RDP=212.125.23.70
 
 [ssh_colors]
 background=#d5ccba

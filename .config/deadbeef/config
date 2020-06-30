@@ -3,7 +3,7 @@ cli_add_playlist_name Default
 deadbeef_version 1.8.3
 filechooser.lastdir file:///home/akinozgen/M%C3%BCzik
 gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Sanatçı / Albüm","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"342","align":"0","color_override":"0","color":"#ff000000"},{"title":"Parça No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Başlık","id":"-1","format":"%title%","sort_format":"","size":"428","align":"0","color_override":"0","color":"#ff000000"},{"title":"Süre","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=1920 {} } 
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=924 {} } 
 gtkui.statusbar.visible 1
 gtkui.tabscroll 0
 gtkui.titlebar_playing_tf %artist% - %title% - DeaDBeeF-%_deadbeef_version%
@@ -44,10 +44,10 @@ logwindow.geometry.h 200
 logwindow.geometry.w 400
 logwindow.geometry.x 40
 logwindow.geometry.y 40
-mainwin.geometry.h 1034
-mainwin.geometry.w 1920
-mainwin.geometry.x 0
-mainwin.geometry.y 0
+mainwin.geometry.h 987
+mainwin.geometry.w 1872
+mainwin.geometry.x 24
+mainwin.geometry.y 24
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 1
@@ -55,7 +55,7 @@ playback.order 1
 playback.volume 0.0000000
 playlist.current 1
 playlist.cursor.0 17
-playlist.cursor.1 7
+playlist.cursor.1 -1
 playlist.cursor.2 0
 playlist.scroll.0 0
 playlist.scroll.1 -7
@@ -67,10 +67,10 @@ prefwin.geometry.h 577
 prefwin.geometry.w 912
 prefwin.geometry.x 498
 prefwin.geometry.y 276
-resume.paused 0
+resume.paused 1
 resume.playlist 1
-resume.position 0.0000000
-resume.track 2
+resume.position 2.9866669
+resume.track 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
 streamer.samplerate_mult_48 48000

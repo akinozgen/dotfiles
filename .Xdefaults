@@ -81,8 +81,8 @@ dmenu.selforeground:	    #d8dee9
 dmenu.background:	        #2e3440
 dmenu.selbackground:	    #bf616a
 dmenu.foreground:	        #d8dee9
-
-
+urxvt*transparent: true
+urxvt*shading: 10
 URxvt.depth:                      32
 URxvt.background:                 [90]#222D31
 URxvt*scrollBar:                  false

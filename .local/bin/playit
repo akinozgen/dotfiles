@@ -1,7 +1,13 @@
 #!/bin/bash
 
 # killall deadbeef
-selected="$(find Müzik/*/*.mp3 | rofi -dmenu -location 5 -yoffset -45 -p '')"
+selected="$(find Müzik/*/*.mp3 | rofi -dmenu -i -location 5 -yoffset -45 -p '')"
+
+if [ "$selected" = "" ]
+then
+	exit
+fi
+
 option="$(echo -e 'Play\nQueue' | rofi -dmenu -location 5 -yoffset -45 -p '')"
 
 if [ "$option" = "Play" ]
