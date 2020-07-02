@@ -28,7 +28,12 @@ alias zrc="vim ~/.zshrc"
 alias neo=neofetch
 
 alias i='sudo apt install -y'
-alias gc=git clone
+alias gc="git clone"
+alias ga="git add"
+alias gm="git commit -m"
+alias gp="git push"
+alias gs="git status"
+alias gsuno="git status -uno"
 
 alias slideshow="feh -zsrZFdD 10"
 alias shufflevids="nohup find . | sort -R | mpv --image-display-duration=20 --playlist=- > /dev/null 2>&1&"
