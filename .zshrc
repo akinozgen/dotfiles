@@ -6,10 +6,18 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/akinozgen/.zshrc'
-bindkey '^[[1;5C' forward-word
-bindkey '^[[1;5D' backward-word
 autoload -Uz compinit
 compinit
+
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+
+backward-kill-dir () {
+    local WORDCHARS=${WORDCHARS/\/}
+    zle backward-kill-word
+}
+zle -N backward-kill-dir
+bindkey '^[^?' backward-kill-dir
 
 export ZSH="/home/akinozgen/.oh-my-zsh"
 

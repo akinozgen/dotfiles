@@ -5,5 +5,4 @@ export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/home/akinoz
 export NVM_DIR="$HOME/.nvm"
 export ZSH="/home/akinozgen/.oh-my-zsh"
 export ZSH_THEME="akinozgen"
-export current_wall="$(grep file= .config/nitrogen/bg-saved.cfg | tail -1 | awk -F'=' '{print $2}')"
 
