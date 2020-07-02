@@ -17,4 +17,4 @@ ZSH_THEME="spaceship"
 plugins=(git)
 source ~/.bashrc
 eval "$(starship init zsh)" 
-#End of lines added by compinstall
+pfetch

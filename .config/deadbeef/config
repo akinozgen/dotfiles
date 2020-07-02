@@ -2,8 +2,8 @@ artwork.filemask *cover*.jpg;*front*.jpg;*folder*.jpg;*cover*.png;*front*.png;*f
 cli_add_playlist_name Default
 deadbeef_version 1.8.3
 filechooser.lastdir file:///home/akinozgen/M%C3%BCzik
-gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Sanatçı / Albüm","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"342","align":"0","color_override":"0","color":"#ff000000"},{"title":"Parça No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Başlık","id":"-1","format":"%title%","sort_format":"","size":"428","align":"0","color_override":"0","color":"#ff000000"},{"title":"Süre","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=924 {} } 
+gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Öğe İndeksi","id":"0","format":"","sort_format":"","size":"100","align":"0","color_override":"0","color":"#ffeeeeee"},{"title":"Sanatçı / Albüm","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"342","align":"0","color_override":"0","color":"#ff000000"},{"title":"Parça No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Başlık","id":"-1","format":"%title%","sort_format":"","size":"428","align":"0","color_override":"0","color":"#ff000000"},{"title":"Süre","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } tabbed_playlist hideheaders=0 width=1872 {} } 
 gtkui.statusbar.visible 1
 gtkui.tabscroll 0
 gtkui.titlebar_playing_tf %artist% - %title% - DeaDBeeF-%_deadbeef_version%
@@ -55,7 +55,7 @@ playback.order 1
 playback.volume 0.0000000
 playlist.current 1
 playlist.cursor.0 17
-playlist.cursor.1 -1
+playlist.cursor.1 7
 playlist.cursor.2 0
 playlist.scroll.0 0
 playlist.scroll.1 -7
@@ -67,14 +67,14 @@ prefwin.geometry.h 577
 prefwin.geometry.w 912
 prefwin.geometry.x 498
 prefwin.geometry.y 276
-resume.paused 1
+resume.paused 0
 resume.playlist 1
-resume.position 2.9866669
-resume.track 0
+resume.position 4.2666655
+resume.track 7
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
 streamer.samplerate_mult_48 48000
 trkproperties.geometry.h 400
 trkproperties.geometry.w 400
-trkproperties.geometry.x 132
+trkproperties.geometry.x 134
 trkproperties.geometry.y 550

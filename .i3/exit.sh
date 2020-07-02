@@ -11,7 +11,7 @@ then
 	reboot
 elif [ "$select" = "Shutdown" ]
 then
-	shutdown
+	shutdown -P now
 fi
 
 exit
