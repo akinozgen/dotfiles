@@ -181,8 +181,8 @@ bindsym $mod+r mode "resize"
 #
 ## colour of border, background, text, indicator, and child_border
 ## Color variables
-# set $unfocused_border #1D1F21
-# set $focused_border #CC6666
+set $unfocused_border #6088a3
+set $focused_border #b76dfc
 #
 ## class                 border  backgr. text    indicator child_border
 # client.focused #6699CC #6699CC #1B2B34 #6699CC
@@ -199,9 +199,9 @@ set $yellow-color #e4db73
 set $orange-color #fc961f
 set $purple-color #ae81ff
 
-# class                     border  	       backgr. 	    text    	    indicator 	    child_border
-client.focused          	$contrast-color    $bg-color	$yellow-color	$contrast-color	$contrast-color
-client.focused_inactive     $bg-color		   $bg-color	$yellow-color	$bg-color	    $bg-color
+#class                     border  	       backgr. 	    text    	    indicator 	    child_border
+client.focused          	#b76dfc    $bg-color	$yellow-color	$contrast-color	$contrast-color
+client.focused_inactive   #b76dfc		   $bg-color	$yellow-color	$bg-color	    $bg-color
 client.unfocused          	$bg-color          $bg-color	$contrast-color	$bg-color	    $bg-color
 client.urgent         		$red-color		   $bg-color	$red-color	    $red-color      $red-color
 client.placeholder          $bg-color		   $bg-color	$yellow-color	$bg-color	    $bg-color
@@ -232,8 +232,8 @@ bindsym $mod+XF86AudioPause exec ~/.local/bin/playit
 ###########################################################
 focus_follows_mouse no
 # new_window 1pixel
-for_window [class="^Firefox"] border pixel 1
-gaps inner 25
+for_window [class="^Firefox"] border pixel 2
+gaps inner 20
 bindsym $mod+Tab focus right
 bindsym $mod+Shift+Tab focus left
 bindsym $mod+Shift+P  gaps inner all plus 5
@@ -243,8 +243,8 @@ bindsym $mod+b exec --no-startup-id rofi-bluetooth
 bindsym $mod+Shift+V exec vpnupdown
 
 # DEFAULT BORDER
-for_window [class="^.*"] border pixel 0
-for_window [title="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 4
+for_window [title="^.*"] border pixel 4
 
 ###########################################################
 
@@ -256,8 +256,7 @@ exec_always ~/autostart/autorun
 exec sleep 2
 
 ## POLYBAR
-#exec_always --no-startup-id "~/.config/polybar/launch.sh"
-exec_always --no-startup-id tint2
+exec_always --no-startup-id "~/.config/polybar/launch.sh"
 exec_always --no-startup-id "nm-tray"
 
 
