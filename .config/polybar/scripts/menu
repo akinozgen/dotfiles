@@ -35,18 +35,17 @@ LIGHT_GREEN="#7cb342"
 
 # Launch Rofi
 rofi -no-lazy-grab -show drun \
--display-drun "Applications :" -drun-display-format "{name}" \
+ -drun-display-format "{name}" \
 -hide-scrollbar true \
 -bw 0 \
--lines 10 \
+-lines 12 \
 -line-padding 10 \
 -padding 20 \
--width 30 \
+-width 20 \
 -xoffset 68 -yoffset -70 \
 -location 7 \
--columns 2 \
 -show-icons -icon-theme "Papirus" \
--font "Fantasque Sans Mono 10"
+-font "FiraMono Nerd Font Mono 12"
 
 # More Options
 # -fullscreen \
