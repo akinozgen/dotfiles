@@ -256,7 +256,8 @@ exec_always ~/autostart/autorun
 exec sleep 2
 
 ## POLYBAR
-exec_always --no-startup-id "~/.config/polybar/launch.sh"
+#exec_always --no-startup-id "~/.config/polybar/launch.sh"
+exec_always --no-startup-id tint2
 exec_always --no-startup-id "nm-tray"
 
 
