@@ -192,7 +192,7 @@ set $focused_border #b76dfc
 # client.placeholder      #ffffff #ffffff #ffffff #ffffff   #ffffff
 set $fg-color #fdfff1
 set $bg-color #272821
-set $contrast-color #3b3c35
+set $contrast-color #fcfcfc
 set $red-color #f82570
 set $green-color #a6e12d
 set $yellow-color #e4db73
@@ -200,8 +200,8 @@ set $orange-color #fc961f
 set $purple-color #ae81ff
 
 #class                     border  	       backgr. 	    text    	    indicator 	    child_border
-client.focused          	#b76dfc    $bg-color	$yellow-color	$contrast-color	$contrast-color
-client.focused_inactive   #b76dfc		   $bg-color	$yellow-color	$bg-color	    $bg-color
+client.focused          	#343D46    $bg-color	$yellow-color	$contrast-color	$contrast-color
+client.focused_inactive   #343D46		   $bg-color	$yellow-color	$bg-color	    $bg-color
 client.unfocused          	$bg-color          $bg-color	$contrast-color	$bg-color	    $bg-color
 client.urgent         		$red-color		   $bg-color	$red-color	    $red-color      $red-color
 client.placeholder          $bg-color		   $bg-color	$yellow-color	$bg-color	    $bg-color
@@ -233,7 +233,7 @@ bindsym $mod+XF86AudioPause exec ~/.local/bin/playit
 focus_follows_mouse no
 # new_window 1pixel
 for_window [class="^Firefox"] border pixel 2
-gaps inner 20
+gaps inner 25
 bindsym $mod+Tab focus right
 bindsym $mod+Shift+Tab focus left
 bindsym $mod+Shift+P  gaps inner all plus 5
@@ -243,8 +243,8 @@ bindsym $mod+b exec --no-startup-id rofi-bluetooth
 bindsym $mod+Shift+V exec vpnupdown
 
 # DEFAULT BORDER
-for_window [class="^.*"] border pixel 4
-for_window [title="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 2
+for_window [title="^.*"] border pixel 2
 
 ###########################################################
 
