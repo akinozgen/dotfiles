@@ -33,7 +33,7 @@ URxvt*reverseVideo: false
 
 URxvt*depth: 32
 
-URxvt.background: [90]#CCCCCC
+URxvt.background: [90]#000000
 
 URxvt*pointerBlank: false
 URxvt*inheritPixmap: false

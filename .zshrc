@@ -21,7 +21,7 @@ bindkey '^[^?' backward-kill-dir
 
 export ZSH="/home/akinozgen/.oh-my-zsh"
 
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
 plugins=(git)
 source ~/.bashrc
 eval "$(starship init zsh)" 

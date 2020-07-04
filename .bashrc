@@ -1,4 +1,3 @@
-[[ $TERM != "screen" ]] && exec tmux
 
 source ~/.local/functions.sh
 source ~/.local/exports.sh
