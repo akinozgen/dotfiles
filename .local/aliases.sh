@@ -10,6 +10,7 @@ alias q="exit"
 alias e="exit"
 alias c="clear"
 alias !="sudo"
+alias pss="ps aux | grep"
 
 # Directories
 alias dwns="cd ~/dwns" 
