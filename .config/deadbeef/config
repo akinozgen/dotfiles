@@ -8,10 +8,10 @@ converter.output_format 0
 converter.overwrite_action 0
 deadbeef_version 1.8.3
 filechooser.lastdir file:///home/akinozgen/M%C3%BCzik
-gtkui.columns.playlist [{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Öğe İndeksi","id":"0","format":"","sort_format":"","size":"100","align":"0","color_override":"0","color":"#ffeeeeee"},{"title":"Sanatçı / Albüm","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"342","align":"0","color_override":"0","color":"#ff000000"},{"title":"Parça No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Başlık","id":"-1","format":"%title%","sort_format":"","size":"428","align":"0","color_override":"0","color":"#ff000000"},{"title":"Süre","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.columns.playlist [{"title":"Çalıyor","id":"1","format":"","sort_format":"","size":"100","align":"0","color_override":"0","color":"#ffeeeeec"},{"title":"♫","id":"1","format":"%playstatus%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"},{"title":"Öğe İndeksi","id":"0","format":"","sort_format":"","size":"100","align":"0","color_override":"0","color":"#ffeeeeee"},{"title":"Sanatçı / Albüm","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"342","align":"0","color_override":"0","color":"#ff000000"},{"title":"Parça No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Başlık","id":"-1","format":"%title%","sort_format":"","size":"276","align":"0","color_override":"0","color":"#ff000000"},{"title":"Süre","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.embolden_current_track 1
 gtkui.eq.visible 0
-gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } hsplitter locked=0 ratio=0.528846 pos=0 size2=0 {vsplitter locked=0 ratio=0.753656 pos=0 size2=0 {tabbed_playlist hideheaders=0 width=988 {} vsplitter locked=0 ratio=0.831050 pos=0 size2=0 {hbox expand="1 1 1" fill="1 1 1" homogeneous=1 {ctvoices {} spectrum {} scope {} } button color="#000000" textcolor="#000000" label="Convert" action="convert" action_ctx=2 use_color=0 use_textcolor=0 {} } } vsplitter locked=0 ratio=0.800900 pos=0 size2=0 {hsplitter locked=0 ratio=0.683790 pos=0 size2=0 {selproperties {} coverart {} } logviewer {} } } } 
+gtkui.layout.0.6.2 vbox expand="0 1" fill="1 1" homogeneous=0 {hbox expand="0 1 0" fill="1 1 1" homogeneous=0 {playtb {} seekbar {} volumebar {} } hsplitter locked=0 ratio=0.528846 pos=0 size2=0 {vsplitter locked=0 ratio=0.753656 pos=0 size2=0 {tabbed_playlist hideheaders=0 width=1014 {} vsplitter locked=0 ratio=0.831050 pos=0 size2=0 {hbox expand="1 1 1" fill="1 1 1" homogeneous=1 {ctvoices {} spectrum {} scope {} } button color="#000000" textcolor="#000000" label="Convert" action="convert" action_ctx=2 use_color=0 use_textcolor=0 {} } } vsplitter locked=0 ratio=0.800900 pos=0 size2=0 {hsplitter locked=0 ratio=0.683790 pos=0 size2=0 {selproperties {} coverart {} } logviewer {} } } } 
 gtkui.override_listview_colors 0
 gtkui.statusbar.visible 1
 gtkui.tabscroll 0
@@ -53,21 +53,21 @@ logwindow.geometry.h 200
 logwindow.geometry.w 400
 logwindow.geometry.x 40
 logwindow.geometry.y 40
-mainwin.geometry.h 965
-mainwin.geometry.w 1868
-mainwin.geometry.x 24
-mainwin.geometry.y 44
+mainwin.geometry.h 1046
+mainwin.geometry.w 1916
+mainwin.geometry.x 0
+mainwin.geometry.y 0
 network.proxy.port 8080
 output_plugin alsa
-playback.loop 1
-playback.order 1
+playback.loop 0
+playback.order 2
 playback.volume 0.0000000
-playlist.current 1
-playlist.cursor.0 17
-playlist.cursor.1 14
+playlist.current 0
+playlist.cursor.0 -1
+playlist.cursor.1 0
 playlist.cursor.2 0
 playlist.scroll.0 0
-playlist.scroll.1 -7
+playlist.scroll.1 0
 playlist.scroll.2 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Müzik
@@ -76,14 +76,14 @@ prefwin.geometry.h 601
 prefwin.geometry.w 924
 prefwin.geometry.x 504
 prefwin.geometry.y 276
-resume.paused 1
+resume.paused 0
 resume.playlist 1
-resume.position 0.0000000
-resume.track 7
+resume.position 42.112377
+resume.track 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
 streamer.samplerate_mult_48 48000
 trkproperties.geometry.h 400
 trkproperties.geometry.w 400
 trkproperties.geometry.x 134
-trkproperties.geometry.y 550
+trkproperties.geometry.y 548
