@@ -8,24 +8,29 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="InstalledPluginsSearchHistory" value="ideavim" />
     <property name="KEYMAP" value="reop&#10;close ac&#10;dupli&#10;occur&#10;select next" />
     <property name="LayoutCode.codeCleanup" value="true" />
     <property name="LayoutCode.optimizeImports" value="true" />
     <property name="LayoutCode.processChangedText" value="false" />
     <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
-    <property name="MarketplacePluginsSearchHistory" value="/tag:Keymap&#10;dracula&#10;dra&#10;d&#10;drakula" />
+    <property name="MarketplacePluginsSearchHistory" value="ideavim&#10;idea&#10;vim&#10;/tag:Keymap&#10;dracula" />
     <property name="NonModalCommitCustomization.IsApplied" value="true" />
     <property name="PhpStorm.InitialConfiguration" value="true" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
     <property name="SettingsSearchHistory" value="ad" />
+    <property name="UITheme.relaunch" value="true" />
     <property name="appcds.runOnSecondStart" value="PS-201.7846.90-22d09277a71b34fe72590977922bb11ff79a3662c282330f1772a0df4814d644" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="300" />
     <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.1" value="800" />
     <property name="dir.diff.panel.divider.location" value="388" />
+    <property name="dir.diff.space.button.info" value="1" />
     <property name="evlsprt3.201" value="14" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/Masaüstü/Work/projects/issglobal/resources/views/stocks/goods/create.blade.php&#10;/home/akinozgen/Masaüstü/Work/projects/issglobal/app/Http/Controllers/StocksController.php&#10;/home/akinozgen/Masaüstü/Work/projects/mmuhasebe/vendor&#10;/home/akinozgen/.ssh/id_rsa&#10;/home/akinozgen/Masaüstü/Work/projects/mmuhasebe" />
-    <property name="file.gist.reindex.count" value="165" />
+    <property name="file.gist.reindex.count" value="169" />
     <property name="ide.memory.adjusted" value="true" />
+    <property name="ideavim.statistics.timestamp" value="1594305879977" />
     <property name="js.chrome.debugger.port.98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" value="39783" />
     <property name="js.rename.search.for.text.occurrences" value="false" />
     <property name="js.rename.search.in.comments" value="false" />

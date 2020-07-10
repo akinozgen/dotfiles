@@ -241,6 +241,8 @@ bindsym $mod+Control+P  gaps inner all minus 5
 bindsym $mod+Control+L exec "sh ~/.i3/lock.sh"
 bindsym $mod+b exec --no-startup-id rofi-bluetooth
 bindsym $mod+Shift+V exec vpnupdown
+bindsym $mod+Control+Shift+P exec "scrot '%s$wx$h_scrot.png' -e 'mv $f ~/screenshots'"
+bindsym $mod+Control+Shift+M exec mounter
 
 # DEFAULT BORDER
 for_window [class="^.*"] border pixel 2
