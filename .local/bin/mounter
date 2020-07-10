@@ -1,0 +1,35 @@
+#!/bin/bash
+drives=$(lsblk -l | grep part | awk '{ if ($7~"/") { print " " $1 , $4 " -> " $7 $8 $9 $10 $11 } else { print " " $1 , $4 }  }' | sort -k 4)
+drive=$(echo "$drives" | rofi -width 500 -dmenu -i -l 10 -p "Select a partititon to (un)mount")
+drivepath="/dev/"$(echo $drive | awk '{print $2}')
+operations=("Mount" "Unmount" "Open" "Exit")
+op=$(printf "%s\n"  "${operations[@]}" | rofi -width 500 -dmenu -i -l 10 -p "($drivepath) Select an operation.")
+
+[[ "$op" = "Exit" ]] && exit
+[[ "$op" = "" ]] && exit
+
+case $op in
+
+  Mount) 
+    mountpoint=$(find /mnt -type d -maxdepth 1 | sed 1d | rofi -width 500 -dmenu -i -l 10 -p "($drivepath) Select a mountpoint:")
+    [[ "$mountpoint" = "" ]] && exit
+    if [ ! -d "$mountpoint" ]
+    then
+      gksudo "mkdir -p '$mountpoint'"
+    fi
+    gksudo "mount $drivepath $mountpoint"
+    notify-send "The drive $drivepath mounted to $mountpoint."
+    ;;
+
+  Unmount)
+    gksudo "umount $drivepath"
+    notify-send "$drivepath unmounted"
+    ;;
+
+  Open)
+    dir=$(echo $drive | awk '{print $5}')
+    xdg-open "$dir"
+    ;;
+
+esac
+
