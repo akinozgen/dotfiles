@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=100000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -25,4 +25,4 @@ export ZSH="/home/akinozgen/.oh-my-zsh"
 plugins=(git)
 source ~/.bashrc
 eval "$(starship init zsh)" 
-pfetch
+neofetch
