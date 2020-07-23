@@ -1,16 +1,8 @@
 #!/bin/bash
 
-re='^[0-9]+$'
-
 while true; do
-  clear
-	exists="$(pgrep deadbeef)"
-	if [[ $exists =~ $re ]] ; then
-		output="$(deadbeef --nowplaying-tf '%artist% - %title%')"
-		echo $output
-	else
-		echo 'Not playing'
-	fi
+    output=$(playerctl metadata | grep -E 'artist |title' | awk '{ $1=""; $2=""; print}' | sed ':a;N;$!ba;s/\n/ - /g;s/ *$/ /g')
+		clear > /dev/null;echo $output
 	sleep 2 &
 	wait
 done
