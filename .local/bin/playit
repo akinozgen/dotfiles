@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # killall deadbeef
-selected="$(find Müzik/*/*.mp3 | rofi -dmenu -i -location 5 -yoffset -45 -p '')"
+selected="$(find Müzik/*/*.mp3 | rofi  -multi-select -dmenu -i -location 5 -yoffset -45 -p '')"
 
 if [ "$selected" = "" ]
 then
