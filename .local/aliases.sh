@@ -12,6 +12,9 @@ alias c="clear"
 alias !="sudo"
 alias pss="ps aux | grep"
 
+alias dockup='sudo docker-compose up'
+alias laradockconnect='sudo docker-compose exec --user=laradock workspace bash'
+
 # Directories
 alias dwns="cd ~/dwns" 
 alias docs="cd ~/docs" 
@@ -40,3 +43,4 @@ alias slideshow="feh -zsrZFdD 10"
 alias shufflevids="nohup find . | sort -R | mpv --image-display-duration=20 --playlist=- > /dev/null 2>&1&"
 
 alias o="xdg-open"
+alias quartkopya="gnumeric '/home/akinozgen/Masaüstü/Work/xls/quart - Kopya.xlsx'"

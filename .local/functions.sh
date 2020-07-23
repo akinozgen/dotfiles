@@ -8,3 +8,6 @@ add_alias() {
 	source ~/.local/aliases.sh
 }
 
+togb() {
+  echo $(echo $1 | awk '{print /1000/1000/1000 " GB "}')
+}
