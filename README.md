@@ -8,7 +8,8 @@ Nothing special. Built on top of [community/manjaro-i3-settings](https://github.
 * Fonts and prompt: [Starship Prompt](https://starship.rs/config/), [powerline/fonts](https://github.com/powerline/fonts), [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 * Terminal: [st](https://st.suckless.org/) (specially this build [LukeSmithxyz/st](https://github.com/LukeSmithxyz/st))
 * Shell: [zsh](https://wiki.archlinux.org/index.php/zsh) and [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-* Music Player: [DeaDBeeF-Player/deadbeef](https://github.com/DeaDBeeF-Player/deadbeef)
+~~* Music Player: [DeaDBeeF-Player/deadbeef](https://github.com/DeaDBeeF-Player/deadbeef)~~
+* (Playerctl and rhytmbox forever 🤘)
 * Network Manager: [NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager) specifically [nmcli](https://wiki.archlinux.org/index.php/NetworkManager#nmcli_examples)
 * File Manager: [ranger/ranger](https://github.com/ranger/ranger)
 * Browser: [Firefox](https://wiki.archlinux.org/index.php/Firefox) with this theme [Zonnev/elementaryos-firefox-theme](https://github.com/Zonnev/elementaryos-firefox-theme)
