@@ -8,10 +8,10 @@ then
 	i3-msg exit
 elif [ "$select" = "Reboot" ]
 then
-	reboot
+	systemctl reboot
 elif [ "$select" = "Shutdown" ]
 then
-	shutdown -P now
+	systemctl poweroff
 fi
 
 exit

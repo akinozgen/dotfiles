@@ -39,8 +39,10 @@ alias gp="git push"
 alias gs="git status"
 alias gsuno="git status -uno"
 
-alias slideshow="feh -zsrZFdD 10"
+alias slideshow="feh -zsrZFD 10"
+alias slideshow2="feh -srFdZD 10"
 alias shufflevids="nohup find . | sort -R | mpv --image-display-duration=20 --playlist=- > /dev/null 2>&1&"
 
 alias o="xdg-open"
+alias ccat='pygmentize -g'
 alias quartkopya="gnumeric '/home/akinozgen/Masaüstü/Work/xls/quart - Kopya.xlsx'"

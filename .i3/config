@@ -9,7 +9,7 @@
 #
 # Please see https:/i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -96,6 +96,10 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+# Open directories
+bindsym Control+Mod1+1 exec --no-startup-id "xfe /home/akinozgen/Desktop"
+bindsym Control+Mod1+2 exec --no-startup-id "xfe /home/akinozgen/Downloads"
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
@@ -119,7 +123,7 @@ bindsym $mod+Shift+e exec --no-startup-id ~/.i3/exit.sh
 
 
 #resize window (you can also use the mouse for that)
-mode "resize" {
+mode "Resize Mode" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -142,26 +146,33 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+mode "Monitor Switch Mode" {
+	bindsym d exec --no-startup-id "~/.screenlayout/default.sh"
+	bindsym m exec --no-startup-id "~/.screenlayout/monitor.sh"
+	bindsym Escape mode "default"
+}
 
+bindsym $mod+m mode "Monitor Switch Mode"
+bindsym $mod+r mode "Resize Mode"
+#bindsym $mod+Control+n exec --no-startup-id $HOME/.config/polybar/scripts/nowplaying.sh
 
-# bar {
-#   position top
-#         colors {
-# 	        background #2f343f
-# 	        statusline #2f343f
-# 	        separator #4b5262
-# 
-# 	        # colour of border, background, and text
-# 	        focused_workspace       #2f343f #bf616a #d8dee8
-# 	        active_workspace        #2f343f #2f343f #d8dee8
-# 	        inactive_workspace      #2f343f #2f343f #d8dee8
-# 	        urgent_workspacei       #2f343f #ebcb8b #2f343f
-# 		}
-# 		status_command i3status
-# 		font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# 		font pango:San Francisco Display Medium 12
-# }
+#bar {
+#  position top
+#        colors {
+#	        background #bf616a
+#	        statusline #2f343f
+#	        separator #4b5262
+#
+#	        # colour of border, background, and text
+#	        focused_workspace       #2f343f #bf616a #d8dee8
+#	        active_workspace        #2f343f #2f343f #d8dee8
+#	        inactive_workspace      #2f343f #2f343f #d8dee8
+#	        urgent_workspacei       #2f343f #ebcb8b #2f343f
+#		}
+#		status_command i3status
+#		font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#		font pango:San Francisco Display Medium 12
+#}
 
 
 ###########################################################
@@ -191,7 +202,7 @@ set $focused_border #b76dfc
 # client.urgent #EC5f67 #EC5f67 #1B2B34 #EC5f67
 # client.placeholder      #ffffff #ffffff #ffffff #ffffff   #ffffff
 set $fg-color #fdfff1
-set $bg-color #272821
+set $bg-color #282A36
 set $contrast-color #fcfcfc
 set $red-color #f82570
 set $green-color #a6e12d
@@ -210,22 +221,22 @@ client.background       #ffffff
 ###########################################################
 # ROFI SHORTCUT
 # bindsym $mod+d exec "rofi -modi window,drun,run -show drun -sidebar-mode -terminal termite -color-window '#000000, #000000, #000000' -color-normal '#000000, #b3e774, #000000, #b3e774, #000000' -color-active '#000000, #b3e774, #000000, #b3e774, #000000' -color-urgent '#000000, #b3e774, #000000, #b3e774, #000000'"
-bindsym $mod+n exec network_manager_dmenu
+bindsy $mod+n exec network_manager_dmenu
 #bindsym $mod+d exec 'bash ~/.local/bin/appsmenu'
 
 ### MEDIA PLAYER SHORTCUTS ################################
 # Pulse Audio controls
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id  "pactl set-sink-volume `pactl list short | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,'` +5%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume `pactl list short | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,'` -5%"
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute `pactl list short | grep RUNNING | sed -e 's,^\([0-9][0-9]*\)[^0-9].*,\1,'`"
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioMicMute exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
@@ -234,16 +245,15 @@ bindsym XF86AudioPrev exec playerctl previous
 ###########################################################
 focus_follows_mouse no
 # new_window 1pixel
-gaps inner 0
+#gaps inner 0
 bindsym $mod+Tab focus right
 bindsym $mod+Shift+Tab focus left
-bindsym $mod+Shift+P  gaps inner all plus 5
-bindsym $mod+Control+P  gaps inner all minus 5
+#bindsym $mod+Shift+P  gaps inner all plus 5
+#bindsym $mod+Control+P  gaps inner all minus 5
 bindsym $mod+Control+L exec "sh ~/.i3/lock.sh"
 bindsym $mod+b exec --no-startup-id rofi-bluetooth
-bindsym $mod+Shift+V exec vpnupdown
 bindsym $mod+Control+Shift+P exec "scrot '%s$wx$h_scrot.png' -e 'mv $f ~/screenshots'"
-bindsym $mod+Control+Shift+M exec mounter
+bindsym $mod+Control+Shift+M exec --no-startup-id vpnupdown
 
 # DEFAULT BORDER
 for_window [class="^.*"] border pixel 2
@@ -260,11 +270,11 @@ exec sleep 2
 
 ## POLYBAR
 exec_always --no-startup-id "~/.config/polybar/launch.sh"
-exec_always --no-startup-id "nm-tray"
-
+exec --no-startup-id "nm-applet"
+exec --no-startup-id "volumeicon"
 
 ## EYCANDIES (picom,feh wallpaper, conky)
-exec_always picom --experimental-backends --backend glx --blur-method dual_kawase --blur-strength 8 &
+exec_always compton  &
 exec_always nitrogen --restore
 exec_always dunst &
 ###########################################################
@@ -272,3 +282,6 @@ exec --no-startup-id xsettingsd &
 exec_always wal-tile
 exec_always --no-startup-id picom
 
+
+bindsym XF86Launch1 exec $HOME/.local/bin/toggletouchpad.sh
+bindsym $mod+t exec st

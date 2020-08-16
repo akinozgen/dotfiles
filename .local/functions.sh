@@ -11,3 +11,6 @@ add_alias() {
 togb() {
   echo $(echo $1 | awk '{print /1000/1000/1000 " GB "}')
 }
+lastxfiles() {
+  find . -type f -printf '%T@ %p\n' | sort -n | tail -$1 | awk '{print $2}'
+}

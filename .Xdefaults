@@ -1,7 +1,7 @@
 URxvt.internalBorder:  10
 
-URxvt.font:         xft:FiraMono Nerd Font Mono:size=10
-URxvt.boldFont:     xft:FiraMono Nerd Font Mono:size=10
+URxvt.font:         xft:FiraMono Nerd Font Mono:size=12
+URxvt.boldFont:     xft:FiraMono Nerd Font Mono:size=12
 #urxvt256c-ml*font: xft:Iosevka Nerd Font:pixelsize=11
 #URxvt.font:         xft:Iosevka Nerd Font:pixelsize=11
 #URxvt.boldFont:     xft:Iosevka Nerd Font:pixelsize=11
@@ -91,3 +91,5 @@ URxvt*cursorBlink:                true
 URxvt*background:                 black
 URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
+
+Xft.dpi: 120
