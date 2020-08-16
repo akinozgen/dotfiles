@@ -22,7 +22,7 @@ Current OS: Debian Buster (10)
 * Video Player: [mpv-player/mpv](https://github.com/mpv-player/mpv)
 * Image Viewer: [feh](https://git.finalrewind.org/feh/)
 * Screenshot: [scrot](https://www.archlinux.org/packages/?name=scrot) and [gnome-screenshot](https://en.wikipedia.org/wiki/GNOME_Screenshot)
-* ~~Audio: Came with manjaro architech installation.`` 
+* ~~Audio: Came with manjaro architech installation.~~
 * Alsa/Pulseaudio: [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/)
 * Remote Management: [remmina](https://remmina.org/)
 * Automation: [python3](https://wiki.archlinux.org/index.php/Python), [entr](http://entrproject.org/)
