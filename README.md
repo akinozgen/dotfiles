@@ -2,6 +2,8 @@
 
 Nothing special. Built on top of [community/manjaro-i3-settings](https://github.com/manjaro/packages-community/tree/master/i3/manjaro-i3-settings)
 
+Current OS: Debian Buster (10)
+
 ### Additional repos/packages
 * Bar: [adi1090x/polybar-themes / polybar-1](https://github.com/adi1090x/polybar-themes/tree/master/polybar-1)
 * Wallaper Management: [Nitrogen](https://wiki.archlinux.org/index.php/Nitrogen)
