@@ -5,4 +5,4 @@ export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/home/akinoz
 export NVM_DIR="$HOME/.nvm"
 export ZSH="/home/akinozgen/.oh-my-zsh"
 export ZSH_THEME="akinozgen"
-wal -i $(cat .config/nitrogen/bg-saved.cfg | grep 'file=' | sed 's/file\=//g')
+# wal -i $(cat .config/nitrogen/bg-saved.cfg | grep 'file=' | sed 's/file\=//g')

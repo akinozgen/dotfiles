@@ -1,17 +1,17 @@
-URxvt.internalBorder:  10
+!!URxvt.internalBorder:  10
 
-URxvt.font:         xft:FiraMono Nerd Font Mono:size=12
-URxvt.boldFont:     xft:FiraMono Nerd Font Mono:size=12
 #urxvt256c-ml*font: xft:Iosevka Nerd Font:pixelsize=11
 #URxvt.font:         xft:Iosevka Nerd Font:pixelsize=11
 #URxvt.boldFont:     xft:Iosevka Nerd Font:pixelsize=11
+URxvt.font:                       xft:Iosevka:style=bold:size=9,xft:DejaVu Sans Mono:size=9
 URxvt*intensityStyles: true
 
-URxvt*linespace: 0
+URxvt*linespace: 2
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.perl-ext-common: default,clipboard
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+URxvt.utf8: true
 
 URxvt.copyCommand:  xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
@@ -33,7 +33,7 @@ URxvt*reverseVideo: false
 
 URxvt*depth: 32
 
-URxvt.background: [90]#000000
+URxvt.background: [50]#000000
 
 URxvt*pointerBlank: false
 URxvt*inheritPixmap: false
@@ -92,4 +92,3 @@ URxvt*background:                 black
 URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
 
-Xft.dpi: 120

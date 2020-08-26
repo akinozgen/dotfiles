@@ -28,4 +28,5 @@ source ~/.bashrc
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
-neofetch
+clear
+pfetch

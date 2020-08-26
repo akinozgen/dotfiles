@@ -11,46 +11,51 @@ general {
 	color_good =     '#f8f8f2'  
         color_degraded = '#f8f8f2'  
         color_bad =      '#f8f8f2'  
-        interval = 5
+        interval = 1
 }
 
-order += "ipv6"
 order += "wireless _first_"
 order += "ethernet _first_"
-order += "battery all"
+order += "battery 0"
 order += "disk /home"
 order += "load"
+order += "cpu_temperature 0"
 order += "memory"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+        format_up = " %essid"
+        format_down = "睊"
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_up = " (%speed)"
+        format_down = ""
 }
 
-battery all {
-        format = "🔋 %percentage %remaining"
+battery 0 {
+        format = " %percentage %remaining"
 }
 
 disk "/home" {
-        format = "🖴 %avail"
+        format = " %avail"
 }
 
 load {
-        format = "👾 %1min"
+        format = "勒 %1min"
+}
+
+cpu_temperature 0 {
+    path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input"
+    format = " %degrees°C"
 }
 
 memory {
-        format = "🐏 %used | %available"
+        format = " %used of %total"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = "📅 %d.%m.%Y, %H:%M"
+        format = " %d.%m.%Y, %H:%M"
 }
