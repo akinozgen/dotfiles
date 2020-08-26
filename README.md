@@ -28,3 +28,6 @@ Current OS: Debian Buster (10)
 * Automation: [python3](https://wiki.archlinux.org/index.php/Python), [entr](http://entrproject.org/)
 * Text Ed./IDE: [neovim](https://neovim.io/) with [SpaceVim](https://spacevim.org/), [vscode](https://code.visualstudio.com/)
 * IDE: [Phpstorm w/ student license](https://www.jetbrains.com/community/education/)
+
+### a little sneak
+![A little sneak](https://raw.githubusercontent.com/akinozgen/dotfiles/master/.screenlayout/ss.jpg)
