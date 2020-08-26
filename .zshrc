@@ -24,5 +24,8 @@ export ZSH="/home/akinozgen/.oh-my-zsh"
 #ZSH_THEME="spaceship"
 plugins=(git)
 source ~/.bashrc
-eval "$(starship init zsh)" 
+#eval "$(starship init zsh)" 
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
 neofetch

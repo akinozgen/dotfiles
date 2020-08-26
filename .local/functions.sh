@@ -11,6 +11,15 @@ add_alias() {
 togb() {
   echo $(echo $1 | awk '{print /1000/1000/1000 " GB "}')
 }
+
 lastxfiles() {
-  find . -type f -printf '%T@ %p\n' | sort -n | tail -$1 | awk '{print $2}'
+  find . -type f -printf '%T@ %p\n' | sort -n | tail -$1 | awk '{print $2}' | tac
+}
+
+ytvideo() {
+	youtube-dl --output "%(uploader)s|%(title)s.%(ext)s" "$1"
+}
+
+ytmp3() {
+	youtube-dl --extract-audio --audio-format mp3 --output "s%(title)s.%(ext)s" "$1"
 }

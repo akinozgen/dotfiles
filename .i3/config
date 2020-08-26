@@ -236,10 +236,10 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Media player controls
-bindsym XF86AudioMicMute exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioMicMute exec strawberry -t
+bindsym XF86AudioPause exec strawberry -t
+bindsym XF86AudioNext exec strawberry -f
+bindsym XF86AudioPrev exec strawberry -r
 
 ## (mouse focus, titlebar border sıfırla boşluklar falan)
 ###########################################################
