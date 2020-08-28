@@ -152,7 +152,7 @@ mode "Monitor Switch Mode" {
 	bindsym b exec --no-startup-id "~/.screenlayout/both.sh"
 	bindsym Escape mode "default"
 }
-
+bindsym $mod+Shift+m exec --no-startup-id "~/.config/i3/screenlayout.sh"
 bindsym $mod+m mode "Monitor Switch Mode"
 bindsym $mod+r mode "Resize Mode"
 #bindsym $mod+Control+n exec --no-startup-id $HOME/.config/polybar/scripts/nowplaying.sh
