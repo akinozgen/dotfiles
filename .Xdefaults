@@ -31,9 +31,9 @@ URxvt*cursorColor2: #000000
 URxvt*cursorBlink: false
 URxvt*reverseVideo: false
 
-URxvt*depth: 32
+URxvt*depth: 24
 
-URxvt.background: [50]#000000
+URxvt.background: #000000
 
 URxvt*pointerBlank: false
 URxvt*inheritPixmap: false
@@ -83,8 +83,8 @@ dmenu.selbackground:	    #bf616a
 dmenu.foreground:	        #d8dee9
 urxvt*transparent: true
 urxvt*shading: 10
-URxvt.depth:                      32
-URxvt.background:                 [90]#222D31
+URxvt.depth:                      24
+URxvt.background:                 #222D31
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true

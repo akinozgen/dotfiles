@@ -67,4 +67,5 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
+xautolock -time 10 -locker ~/.i3/lock.sh &
 exec $(get_session)

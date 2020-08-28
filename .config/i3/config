@@ -118,7 +118,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec --no-startup-id ~/.i3/exit.sh
+bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/exit.sh
 
 
 
@@ -149,6 +149,7 @@ mode "Resize Mode" {
 mode "Monitor Switch Mode" {
 	bindsym d exec --no-startup-id "~/.screenlayout/default.sh"
 	bindsym m exec --no-startup-id "~/.screenlayout/monitor.sh"
+	bindsym b exec --no-startup-id "~/.screenlayout/both.sh"
 	bindsym Escape mode "default"
 }
 
@@ -253,7 +254,7 @@ bindsym $mod+Shift+Tab focus left
 bindsym $mod+Control+Shift+Tab focus down
 #bindsym $mod+Shift+P  gaps inner all plus 5
 #bindsym $mod+Control+P  gaps inner all minus 5
-bindsym $mod+Control+L exec "sh ~/.i3/lock.sh"
+bindsym $mod+Control+L exec "sh /home/akinozgen/.config/i3/lock.sh"
 bindsym $mod+b exec --no-startup-id rofi-bluetooth
 bindsym $mod+Control+Shift+P exec "scrot '%s$wx$h_scrot.png' -e 'mv $f ~/screenshots'"
 bindsym $mod+Control+Shift+M exec --no-startup-id vpnupdown
@@ -284,7 +285,7 @@ exec_always dunst &
 exec --no-startup-id xsettingsd &
 exec_always wal-tile
 exec_always --no-startup-id compton
-exec_always --no-startup-id xautolock -time 10 -locker ~/.i3/lock.sh
+exec_always --no-startup-id xautolock -time 10 -locker ~/.config/i3/lock.sh
 
 bindsym XF86Launch1 exec $HOME/.local/bin/toggletouchpad.sh
 bindsym $mod+t exec urxvt
