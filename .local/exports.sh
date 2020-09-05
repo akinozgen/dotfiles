@@ -1,8 +1,8 @@
 #!/bin/bash
-export $XDG_CONFIG_HOME=~/.config/
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
-export ANDROID_HOME="/home/akinozgen/Android/Sdk"
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/home/akinozgen/Android/Sdk/build-tools/29.0.1:$JAVA_HOME/bin:$HOME/Android/Sdk/build-tools/29.0.2/:${HOME}/.local/bin/:/home/akinozgen/Android/flutter/bin:$HOME/.config/composer/vendor/bin"
+export XDG_CONFIG_HOME="$HOME/.config/"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
+export ANDROID_HOME="/home/akinozgen/.config/AndroidSdk/Sdk"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/home/akinozgen/Android/Sdk/build-tools/29.0.1:$JAVA_HOME/bin:$ANDROID_HOME/build-tools/29.0.2/:$HOME/.local/bin/:$HOME/.config/AndroidSdk/flutter/bin:$HOME/.config/composer/vendor/bin"
 export NVM_DIR="$HOME/.nvm"
 export ZSH="/home/akinozgen/.oh-my-zsh"
 export ZSH_THEME="akinozgen"
