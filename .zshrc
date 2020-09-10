@@ -29,4 +29,4 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 clear
-pfetch
+catimg -r 2 ~/.face.png -w 90
