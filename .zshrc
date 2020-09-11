@@ -28,5 +28,5 @@ source ~/.bashrc
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
-clear
+#clear
 catimg -r 2 ~/.face.png -w 90
