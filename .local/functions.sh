@@ -13,7 +13,7 @@ togb() {
 }
 
 lastxfiles() {
-  find . -type f -printf '%T@ %p\n' | sort -n | tail -$1 | awk '{print $2}' | tac
+  find . -type f -printf '%T@ %p\n' | sort -n | tail -$1 | awk '{print $2, $3, $4, $5, $6, $7, $8}' | tac
 }
 
 ytvideo() {
