@@ -12,5 +12,5 @@ export ANDROID_AVD_HOME="$XDG_DATA_HOME/android/"
 export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME/android"
 export ADB_VENDOR_KEY="$XDG_CONFIG_HOME/android"
 
-
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # wal -i $(cat .config/nitrogen/bg-saved.cfg | grep 'file=' | sed 's/file\=//g')

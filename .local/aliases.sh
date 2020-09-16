@@ -48,5 +48,5 @@ alias ytdl="youtube-dl --extract-audio --audio-format mp3 --output '%(title)s.%(
 alias shufflevids="nohup find . | sort -R | mpv --image-display-duration=20 --playlist=- > /dev/null 2>&1&"
 
 alias o="xdg-open"
-alias ccat='pygmentize -g'
-alias quartkopya="gnumeric '/home/akinozgen/Masaüstü/Work/xls/quart - Kopya.xlsx'"
+#alias ccat='pygmentize -g'
+alias ccat="bat"
