@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PER=$(acpi -V | grep "Battery 0" | head -n 1 | awk '{print $4}' | sed 's/,//g')
+STAT=$(acpi -V | grep Adapter\ 0 | awk '{print $3}')
+
+if [ "$STAT" = "on-line" ]
+then
+    echo " $PER"
+else
+    echo " $PER"
+fi

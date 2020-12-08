@@ -38,13 +38,13 @@ rofi -no-lazy-grab -show drun \
 -display-drun "Applications :" -drun-display-format "{name}" \
 -hide-scrollbar true \
 -bw 0 \
--lines 8 \
+-lines 10 \
 -line-padding 10 \
 -padding 20 \
--width 30 \
+-width 60 \
 -xoffset 8 -yoffset -52 \
 -location 7 \
--columns 2 \
+-columns 8 \
 -show-icons -icon-theme "Papirus" \
 -font "Noto Sans 9" \
 -color-enabled true \

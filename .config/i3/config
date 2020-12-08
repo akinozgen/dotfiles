@@ -157,25 +157,6 @@ bindsym $mod+m mode "Monitor Switch Mode"
 bindsym $mod+r mode "Resize Mode"
 #bindsym $mod+Control+n exec --no-startup-id $HOME/.config/polybar/scripts/nowplaying.sh
 
-bar {
-  position bottom
-        colors {
-	        background #282a36
-	        statusline #f8f8f2
-	        separator #4b5262
-
-	        # colour of border, background, and text
-	        focused_workspace       #2f343f #6272a4 #ffffff
-	        active_workspace        #2f343f #6272a4 #ffffff
-	        inactive_workspace      #2f343f #2f343f #cccccc
-	        urgent_workspacei       #2f343f #ebcb8b #ff0000
-	}
-	tray_padding 2
-	status_command i3status
-	font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-	font pango:San Francisco Display Medium 12
-}
-
 
 ###########################################################
 ####       MY CONFIG YANİ BİLMEM ANLATABİLDİM Mİ       ####
@@ -213,7 +194,7 @@ set $orange-color #fc961f
 set $purple-color #ae81ff
 
 #class                     border  	       backgr. 	    text    	    indicator 	    child_border
-client.focused          	#343D46    $bg-color	$yellow-color	$contrast-color	$contrast-color
+client.focused          	#343D46f6    $bg-color	$yellow-color	$contrast-color	$contrast-color
 client.focused_inactive   #343D46		   $bg-color	$yellow-color	$bg-color	    $bg-color
 client.unfocused          	$bg-color          $bg-color	$contrast-color	$bg-color	    $bg-color
 client.urgent         		$red-color		   $bg-color	$red-color	    $red-color      $red-color
@@ -247,21 +228,21 @@ bindsym XF86AudioPrev exec strawberry -r
 ###########################################################
 focus_follows_mouse no
 # new_window 1pixel
-#gaps inner 0
+gaps inner 20
 bindsym $mod+Tab focus right
 bindsym $mod+Control+Tab focus up
 bindsym $mod+Shift+Tab focus left
 bindsym $mod+Control+Shift+Tab focus down
-#bindsym $mod+Shift+P  gaps inner all plus 5
-#bindsym $mod+Control+P  gaps inner all minus 5
+bindsym $mod+Shift+P  gaps inner all plus 5
+bindsym $mod+Control+P  gaps inner all minus 5
 bindsym $mod+Control+L exec "sh /home/akinozgen/.config/i3/lock.sh"
 bindsym $mod+b exec --no-startup-id rofi-bluetooth
 bindsym $mod+Control+Shift+P exec "scrot '%s$wx$h_scrot.png' -e 'mv $f ~/screenshots'"
 bindsym $mod+Control+Shift+M exec --no-startup-id vpnupdown
 
 # DEFAULT BORDER
-for_window [class="^.*"] border pixel 2
-for_window [title="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
+for_window [title="^.*"] border pixel 1
 for_window [class="^Firefox"] border pixel 0
 ###########################################################
 
@@ -273,21 +254,18 @@ exec_always ~/autostart/autorun
 exec sleep 2
 
 ## POLYBAR
-# exec_always --no-startup-id "~/.config/polybar/launch.sh"
-exec --no-startup-id "nm-applet"
+exec_always --no-startup-id "~/.config/polybar/launch.sh"
+exec --no-startup-id "nm-tray"
 exec --no-startup-id "volumeicon"
 
 ## EYCANDIES (picom,feh wallpaper, conky)
-exec_always compton  &
+exec_always compton --config $HOME/.config/compton.conf &
 exec_always nitrogen --restore
 exec_always dunst &
 ###########################################################
 exec --no-startup-id xsettingsd &
 exec_always wal-tile
-exec_always --no-startup-id compton
 exec_always --no-startup-id xautolock -time 10 -locker ~/.config/i3/lock.sh
+#exec --no-startup-id /home/akinozgen/.config/autostart/lvds1080.sh
 
 bindsym XF86Launch1 exec $HOME/.local/bin/toggletouchpad.sh
-bindsym $mod+t exec urxvt
-
-
