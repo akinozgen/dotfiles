@@ -239,10 +239,11 @@ bindsym $mod+Control+L exec "sh /home/akinozgen/.config/i3/lock.sh"
 bindsym $mod+b exec --no-startup-id rofi-bluetooth
 bindsym $mod+Control+Shift+P exec "scrot '%s$wx$h_scrot.png' -e 'mv $f ~/screenshots'"
 bindsym $mod+Control+Shift+M exec --no-startup-id vpnupdown
+bindsym $mod+Control+E exec rofi -show emoji -modi emoji
 
 # DEFAULT BORDER
-for_window [class="^.*"] border pixel 1
-for_window [title="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
+for_window [title="^.*"] border pixel 0
 for_window [class="^Firefox"] border pixel 0
 ###########################################################
 
@@ -259,13 +260,13 @@ exec --no-startup-id "nm-tray"
 exec --no-startup-id "volumeicon"
 
 ## EYCANDIES (picom,feh wallpaper, conky)
-exec_always compton --config $HOME/.config/compton.conf &
+exec_always picom --experimental-backend --config $HOME/.config/picoom.conf &
 exec_always nitrogen --restore
 exec_always dunst &
 ###########################################################
 exec --no-startup-id xsettingsd &
 exec_always wal-tile
 exec_always --no-startup-id xautolock -time 10 -locker ~/.config/i3/lock.sh
-#exec --no-startup-id /home/akinozgen/.config/autostart/lvds1080.sh
+exec --no-startup-id sleep 10 ; /home/akinozgen/.config/autostart/lvds1080.sh
 
 bindsym XF86Launch1 exec $HOME/.local/bin/toggletouchpad.sh
