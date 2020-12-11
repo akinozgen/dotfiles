@@ -1,7 +1,7 @@
 export ZSH="/home/akinozgen/.oh-my-zsh"
-ZSH_THEME="wezm"
+ZSH_THEME="edvardm"
 plugins=(git fzf)
 source $ZSH/oh-my-zsh.sh
 source $HOME/.bashrc
 clear
-neofetch
+nerdfetch-ohio2
