@@ -9,9 +9,9 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 EDITOR=vim
-TERMINAL=st
+TERMINAL=urxvt
 DEFAULT_SESSION='i3 --shmlog-size 0'
-
+LANG=C
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
@@ -39,8 +39,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
-compton &
-syncthing &
+# compton &
+# syncthing &
 
 get_session(){
 	local dbus_args=(--sh-syntax --exit-with-session)
@@ -67,5 +67,9 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
-xautolock -time 10 -locker ~/.i3/lock.sh &
-exec $(get_session)
+$HOME/.config/autostart/lvds1080.sh&
+
+# xautolock -time 10 -locker ~/.i3/lock.sh &
+exec $(i3 --shmlog-size 0)
+# exec openbox-session &
+
