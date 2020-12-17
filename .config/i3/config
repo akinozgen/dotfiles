@@ -247,12 +247,8 @@ for_window [title="^.*"] border pixel 0
 for_window [class="^Firefox"] border pixel 0
 ###########################################################
 
-## AUTORUNS ###############################################
-## ÇÖZÜNÜRLÜK AYARI
-exec_always ~/autostart/autorun
 
 ## BİRAZ BEKLEMEK GEREKİYOR (wallpaper tam oturmuyor.)
-exec sleep 2
 
 ## POLYBAR
 exec_always --no-startup-id "~/.config/polybar/launch.sh"
@@ -267,6 +263,6 @@ exec_always dunst &
 exec --no-startup-id xsettingsd &
 exec_always wal-tile
 exec_always --no-startup-id xautolock -time 10 -locker ~/.config/i3/lock.sh
-exec --no-startup-id sleep 10 ; /home/akinozgen/.config/autostart/lvds1080.sh
-
+exec --no-startup-id sleep 1; /home/akinozgen/.config/autostart/lvds1080.sh
+exec_always --no-startup-id aplay $HOME/.welcome.wav
 bindsym XF86Launch1 exec $HOME/.local/bin/toggletouchpad.sh

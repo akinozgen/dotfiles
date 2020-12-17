@@ -67,7 +67,8 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
-$HOME/.config/autostart/lvds1080.sh&
+$HOME/.config/autostart/lvds1080.sh &
+redshift -l 36.876978:30.702221 &
 
 # xautolock -time 10 -locker ~/.i3/lock.sh &
 exec $(i3 --shmlog-size 0)
