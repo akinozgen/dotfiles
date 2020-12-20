@@ -1,0 +1,21 @@
+{
+  "name": "mp3-api",
+  "version": "1.0.0",
+  "description": "youtube mp3 api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "content-disposition": "0.5.3",
+    "express": "4.16.4",
+    "fluent-ffmpeg": "2.1.2",
+    "m3u8stream": "0.7.1",
+    "through": "2.3.8",
+    "ytdl-core": "^4.2.1",
+    "ytsr": "^3.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "license": "MIT"
+}
